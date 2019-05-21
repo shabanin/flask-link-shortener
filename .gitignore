@@ -1,6 +1,7 @@
 tags
 #static
 #app/static
+.idea
 # Created by https://www.gitignore.io/api/node
 
 ### Node ###
