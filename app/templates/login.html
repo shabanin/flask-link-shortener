@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="d-flex flex-column align-items-center">
+        <h1 class="m-4">Sign In</h1>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <div class="form-group d-flex flex-column align-items-center">
+                <p>
+                    {{ form.username.label }}<br>
+                    {{ form.username(size=34) }}
+                {% for error in form.username.errors %}
+                    <br><span class="badge badge-light">{{ error }}</span>
+                {% endfor %}
+                </p>
+                <p>
+                    {{ form.password.label }}<br>
+                    {{ form.password(size=34) }}
+                {% for error in form.password.errors %}
+                    <br><span class="badge badge-light">{{ error }}</span>
+                {% endfor %}
+                </p>
+                <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+                <p>{{ form.submit(class_="btn btn-dark btn-lg") }}</p>
+            </div>
+        </form>
+        <p>New User? <a href="{{ url_for('register') }}">Click to Sign Up!</a></p>
+    <div class="d-flex flex-column align-items-center">
+{% endblock %}
