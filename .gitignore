@@ -1,6 +1,6 @@
 tags
-static
-app/static
+#static
+#app/static
 # Created by https://www.gitignore.io/api/node
 
 ### Node ###
