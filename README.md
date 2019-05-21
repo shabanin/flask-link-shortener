@@ -1,14 +1,14 @@
-# minimal-flask-react
+# flask-link-shortener
+[deployed on heroku](https://flask-link-shortener.herokuapp.com/)
 
-Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
+## run locally
 
-## Run Locally
-
-1. Clone this repo: `git clone git@github.com:jwkvam/minimal-flask-react.git`
+1. git clone https://github.com/shabanin/flask-link-shortener.git
 2. npm install
 3. npm run dev
 4. pip install -r requirements.txt
-5. python server.py
-6. Goto http://localhost:3000
+5. flask run
 
-If you would like to have webpack rebuild your javascript any time your React code changes, enter `npm run start` in a different terminal.
+`npm run start` for webpack live rebuild 
+
+boilerplate based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
