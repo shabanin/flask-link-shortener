@@ -9,6 +9,4 @@
 4. pip install -r requirements.txt
 5. flask run
 
-`npm run start` for webpack live rebuild 
-
-boilerplate based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
+`npm run start` for live webpack rebuild 
